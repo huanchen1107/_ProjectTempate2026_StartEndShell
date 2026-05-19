@@ -3,7 +3,7 @@ import os
 import glob
 
 # Try to find the latest overview.txt in the brain folder
-brain_path = "/Users/huango/.gemini/antigravity/brain/"
+brain_path = "/Users/huanchen/.gemini/antigravity/brain/"
 log_files = glob.glob(os.path.join(brain_path, "*/.system_generated/logs/overview.txt"))
 
 if not log_files:
@@ -34,7 +34,8 @@ for line in lines:
         patterns = [
             (r'sk-or-v1-[a-f0-9]{64}', '[REDACTED_OPENROUTER_KEY]'),
             (r'sk-proj-[a-zA-Z0-9_-]{100,}', '[REDACTED_OPENAI_KEY]'),
-            (r'AIzaSy[a-zA-Z0-9_-]{33}', '[REDACTED_GEMINI_KEY]')
+            (r'AIzaSy[a-zA-Z0-9_-]{33}', '[REDACTED_GEMINI_KEY]'),
+            (r'sk-ant-api[a-zA-Z0-9_-]{80,}', '[REDACTED_ANTHROPIC_KEY]')
         ]
         for pattern, replacement in patterns:
             content = re.sub(pattern, replacement, content)
