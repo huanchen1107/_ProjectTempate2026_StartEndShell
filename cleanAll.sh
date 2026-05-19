@@ -6,7 +6,7 @@
 
 PROJECT_NAME=${1:-$(basename "$PWD")}
 TODAY=$(date +"%Y.%m.%d")
-DEV_LOG="devlog.md"
+DEV_LOG="log.md"
 
 echo "🧹 Starting project cleanup for: $PROJECT_NAME"
 

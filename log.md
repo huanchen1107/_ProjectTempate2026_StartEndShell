@@ -9,7 +9,7 @@
 1. **專案初始化**：執行 cleanAll.sh 完成環境重置。
 2. **專案模版建立**：已成功建立並推送至 GitHub 儲存庫 `huanchen1107/ProjectTemplate2026-v2`。
 3. **文件優化**：
-    - 更新 `README.md`，詳盡描述 `cc.sh`, `startup.sh`, `ending.sh`, `initial.sh`, `cleanAll.sh` 的功能與用法。
+    - 更新 `README.md`，詳盡描述 `cc.sh`, `startup.sh`, `ending.sh`, `initial.sh`, `cleanAll.sh` 的功能與用法.
     - 建立 `.env.bak` 模版，確保 API Key 不會被誤傳至 GitHub。
 4. **Git 環境配置**：初始化 Git 並確保 `.gitignore` 正確排除 `.env` 文件。
 

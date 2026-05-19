@@ -52,7 +52,7 @@ Claude Code, or Cursor so the rules load.
 ├── cleanAll.sh        # Project reset & cleanup utility
 ├── .env               # API keys (GIT IGNORED)
 ├── .env.bak           # Template for .env (no keys)
-├── devlog.md          # Development log
+├── log.md             # Development log
 └── user/dialog.md     # Auto-reconstructed conversation history
 ```
 

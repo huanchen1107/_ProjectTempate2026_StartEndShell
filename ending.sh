@@ -11,11 +11,11 @@ echo "================================================="
 echo ""
 
 # Check dev log exists and show last update
-if [ -f "devlog.md" ]; then
-    echo "✅ 開發日誌 (devlog.md)：存在"
-    echo "   最後修改：$(date -r devlog.md '+%Y-%m-%d %H:%M:%S')"
+if [ -f "log.md" ]; then
+    echo "✅ 開發日誌 (log.md)：存在"
+    echo "   最後修改：$(date -r log.md '+%Y-%m-%d %H:%M:%S')"
 else
-    echo "❌ 找不到開發日誌 (devlog.md)！請建立再繼續。"
+    echo "❌ 找不到開發日誌 (log.md)！請建立再繼續。"
 fi
 
 # Check README exists
@@ -35,7 +35,7 @@ echo "🤖 步驟 2：AI 更新開發日誌 & 對話紀錄"
 echo "================================================="
 echo ""
 echo "嗨，AI 助手！請確認以下文件已更新後再繼續："
-echo "   ✅ 開發日誌 (devlog.md) — 加入今日所有有意義的除錯、優化與結論"
+echo "   ✅ 開發日誌 (log.md) — 加入今日所有有意義的除錯、優化與結論"
 echo "   ✅ README.md — 確保反映最新的工作流與使用說明"
 echo "   ✅ Tutorials/ — 若有新任務，請更新對應教學文件"
 echo ""

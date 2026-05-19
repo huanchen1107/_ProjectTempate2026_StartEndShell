@@ -74,10 +74,10 @@ echo ""
 echo "=============================="
 echo "Step 3: 閱讀開發日誌 (Read Dev Log)"
 echo "=============================="
-if [ -f "devlog.md" ]; then
-    cat "devlog.md"
+if [ -f "log.md" ]; then
+    cat "log.md"
 else
-    echo "⚠️ 找不到開發日誌檔案 (devlog.md)！"
+    echo "⚠️ 找不到開發日誌檔案 (log.md)！"
 fi
 echo ""
 echo "🤖 嗨，AI 助手！請閱讀上方的開發日誌，並總結目前的進度，然後告訴我接下來可以開始哪些任務 (Tasks to start)。"
