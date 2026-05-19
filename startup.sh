@@ -74,11 +74,10 @@ echo ""
 echo "=============================="
 echo "Step 3: 閱讀開發日誌 (Read Dev Log)"
 echo "=============================="
-LATEST_LOG=$(ls -t *開發日誌*.md 2>/dev/null | head -n 1)
-if [ -n "$LATEST_LOG" ]; then
-    cat "$LATEST_LOG"
+if [ -f "devlog.md" ]; then
+    cat "devlog.md"
 else
-    echo "⚠️ 找不到開發日誌檔案！"
+    echo "⚠️ 找不到開發日誌檔案 (devlog.md)！"
 fi
 echo ""
 echo "🤖 嗨，AI 助手！請閱讀上方的開發日誌，並總結目前的進度，然後告訴我接下來可以開始哪些任務 (Tasks to start)。"

@@ -6,27 +6,28 @@
 
 PROJECT_NAME=${1:-$(basename "$PWD")}
 TODAY=$(date +"%Y.%m.%d")
-DEV_LOG="${TODAY}開發日誌.md"
+DEV_LOG="devlog.md"
 
 echo "🧹 Starting project cleanup for: $PROJECT_NAME"
 
 # 1. Handle Development Logs
 echo "📝 Initializing development log: $DEV_LOG"
-# Remove existing dev logs to avoid clutter, or just ensure today's is fresh
-find . -maxdepth 1 -name "*開發日誌.md" ! -name "$DEV_LOG" -delete
+# Remove legacy daily logs to avoid clutter
+find . -maxdepth 1 -name "*開發日誌.md" -delete
 
 cat <<EOF > "$DEV_LOG"
-# $TODAY 開發日誌
+# Development Log
 
-> **備忘錄（$TODAY）**
+## $TODAY
+> **備忘錄**
 > 本專案使用官方 **Claude Code** 搭配 \`.env\` 中設定的 \`ANTHROPIC_API_KEY\` 運作。
 > 直接執行 \`./cc.sh\` 或 \`./startup.sh\` 即可。
 
-## 今日重點紀錄
+### 今日重點紀錄
 1. **專案初始化**：執行 cleanAll.sh 完成環境重置。
 2. **新專案啟動**：準備開始 $PROJECT_NAME 的開發工作。
 
-## 技術結論
+### 技術結論
 - (待填寫)
 EOF
 
@@ -58,7 +59,7 @@ cat <<EOF > README.md
 ├── startup.sh         # Session start: reads project goals + launches cc.sh
 ├── ending.sh          # Session end: update logs + commit + push
 ├── .env               # API keys (gitignored)
-├── $DEV_LOG  # Daily dev log
+├── $DEV_LOG          # Development log
 └── user/dialog.md     # Auto-reconstructed conversation history
 \`\`\`
 

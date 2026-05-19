@@ -59,3 +59,18 @@ For multi-step tasks, state a brief plan:
 ```
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
+
+## 5. Development Log (devlog.md)
+
+**Every session MUST start and end with reading and updating `devlog.md`.**
+
+Guidelines for maintaining `devlog.md`:
+- Keep a single file `devlog.md` in the root of the project to record the chronological history of development.
+- At the start of a session, the AI agent must read `devlog.md` to understand the previous progress and goals.
+- During or at the end of every session, the AI agent MUST append to `devlog.md` under a new date header:
+  1. **Today's date and header** (e.g. `## 2026.05.19`)
+  2. **Key Accomplishments**: A clear, bulleted list of actual changes made, features built, or bugs fixed.
+  3. **Technical Decisions/Conclusions**: Short bullet points on critical architectural choices or technical conclusions.
+  4. **Next Tasks**: Explicit tasks that should be tackled next.
+- Keep previous days' entries intact to preserve full history.
+
