@@ -72,7 +72,10 @@ echo "# Project Initial" > project_initial.md
 echo "(Describe your new project goals here)" >> project_initial.md
 
 echo "# Skill List" > skill_list.md
-echo "- (Add installed skills here)" >> skill_list.md
+echo "- **gstack** (\`garrytan/gstack\`)" >> skill_list.md
+echo "- **improve-codebase-architecture** (\`mattpocock/skills\`)" >> skill_list.md
+echo "- **skill-creator** (\`anthropics/skills\`)" >> skill_list.md
+echo "- **using-superpowers** (\`obra/superpowers\`)" >> skill_list.md
 
 # 3. Clean subdirectories
 echo "📁 Cleaning user and Tutorial directories..."
