@@ -75,6 +75,7 @@ npx remotion render      # Compiles the default HelloWorld animation into out/vi
 To make AI programming (via Claude, Gemini, Codex, or Cursor) fast and bug-free, the official `remotion-best-practices` skills have been provisioned in the project:
 * **Pre-loaded Skills**: Located at `.agents/skills/remotion-best-practices` and `remotion/.agents/skills/remotion-best-practices`.
 * **How it helps**: When you ask Claude, Gemini, or Codex to create or modify compositions in the `remotion/` directory, the agents automatically read these rules to ensure perfect React hook usage, precise frame-rate timings, audio-video synchronization, and optimal asset bundling.
+* **Gist Reference**: This guidelines structure is adapted from the official [ThariqS/Remotion Claude.md Gist](https://gist.github.com/ThariqS/3d446e7c7aa9eb94f468194deb73028f#claudemd).
 
 ---
 
