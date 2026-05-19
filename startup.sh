@@ -156,14 +156,14 @@ if [ ! -f ".project_setup" ]; then
             git remote add origin "$REPO_URL"
             git add .
             git commit -m "Initial commit from template"
-            git push -u origin main
+            git push -u origin main --force
         fi
     else
         echo "✅ 該倉庫已存在於 GitHub。"
         git remote add origin "$REPO_URL"
         git add .
         git commit -m "Initial commit from template"
-        git push -u origin main
+        git push -u origin main --force
     fi
     
     # 7. 寫入初始化標記 (Write initialization marker)

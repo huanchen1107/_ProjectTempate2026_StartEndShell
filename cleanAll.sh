@@ -85,6 +85,7 @@ echo "# User Conversation Dialog History" > user/dialog.md
 echo "# Tutorial 1: Getting Started" > Tutorial/Tutorial_1.md
 
 # 4. Finalizing
+rm -f initial.sh
 chmod +x startup.sh ending.sh cc.sh cleanAll.sh
 
 echo "✅ Cleanup complete. $PROJECT_NAME is ready for a fresh start!"
